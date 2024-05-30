@@ -15,19 +15,22 @@ my_catalog = my_cur.fetchall()
 #Put the data into a panda dataframe
 df = pd.DataFrame(my_catalog)
 
-st.write(df)
-st.stop()
-
-
-st.write("Pick a sweatsuit color of style:")
-my_dataframe = session.table("ZENAS_ATHLEISURE_DB.PRODUCTS.catalog_for_website").select(col('COLOR_OR_STYLE'),col('DIRECT_URL'))
-st.dataframe(data=my_dataframe, use_container_width=True)
-st.stop()
+#st.write(df)
+#st.stop()
+st.selectbox("Pick a sweatsuit color of style:",df)
 
 #Convert the Snowpark Dataframe to a Pandas Dataframe so we can use the LOC function
 pd_df = my_dataframe.to_pandas()
-#st.dataframe(pd_df)
-#st.stop()
+st.dataframe(df)
+st.stop()
+#display photo
+
+#display writing
+st.write('Our warm, confortable, ',
+
+
+
+
 
 ingredients_list = st.multiselect('Choose up to 5 ingredients:',my_dataframe, max_selections = 5)
 if ingredients_list:
