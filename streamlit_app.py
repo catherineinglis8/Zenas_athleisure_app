@@ -14,19 +14,23 @@ my_catalog = my_cur.fetchall()
 
 #Put the data into a panda dataframe
 df = pd.DataFrame(my_catalog)
+
+#Put data into a list
 color_list = df[0].values.tolist()
 
-#st.write(df)
-#st.stop()
+#add picker for color choice
 color_selected = st.selectbox("Pick a sweatsuit color or style:",list(color_list))
-st.stop()
+
+#Set caption
 caption = 'Our warm, comfortable, ' + color_selected + 'sweatsuit!'
 
+#get infos for image
 my_cur.execute("SELECT direct_url, price, size_list, upsell_product_desc FROM catalog_for_website where color_or_style = '" + option + "';")
 df2 = my_cur.fetchone()
 
 #display photo with caption
 st.image(df[0],widght = 400,caption = product_caption)
+
 #display writing
 
 
