@@ -19,9 +19,6 @@ df = pd.DataFrame(my_catalog)
 #st.stop()
 st.selectbox("Pick a sweatsuit color of style:",df)
 
-#Convert the Snowpark Dataframe to a Pandas Dataframe so we can use the LOC function
-pd_df = my_dataframe.to_pandas()
-st.dataframe(df)
 st.stop()
 #display photo
 
