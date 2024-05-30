@@ -34,7 +34,8 @@ st.image(df2[0],width = 400,caption = caption)
 #display writing
 
 st.write('Price: ',df2[1])
-
+st.write('Sizes available: ', df[2])
+st.write(df[3])
 
 
 
