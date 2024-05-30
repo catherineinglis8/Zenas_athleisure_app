@@ -2,7 +2,7 @@ import streamlit as st
 import snowflake.connector
 #my_cnx = snowflake.connector.connect(**st.secrets["snowflake"])
 my_cnx = snowflake.connector.connect(
-user = catherineinglis,
+user = "catherineinglis",
 password = "CiGdr1*6",
 account = "QS89075.ca-central.aws",
 warehouse = "compute_wh",
