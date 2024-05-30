@@ -15,7 +15,7 @@ my_catalog = my_cur.fetchall()
 #Put the data into a panda dataframe
 df = pd.DataFrame(my_catalog)
 
-st.wrtie(df)
+st.write(df)
 st.stop()
 
 
