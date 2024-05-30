@@ -25,7 +25,7 @@ color_selected = st.selectbox("Pick a sweatsuit color or style:",list(color_list
 caption = 'Our warm, comfortable, ' + color_selected + 'sweatsuit!'
 
 #get infos for image
-my_cur.execute("SELECT direct_url, price, size_list, upsell_product_desc FROM catalog_for_website where color_or_style = '" + option + "';")
+my_cur.execute("SELECT direct_url, price, size_list, upsell_product_desc FROM catalog_for_website where color_or_style = '" + color_selected + "';")
 df2 = my_cur.fetchone()
 
 #display photo with caption
