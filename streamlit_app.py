@@ -26,7 +26,7 @@ st.stop()
 #display photo
 
 #display writing
-st.write('Our warm, confortable, ',
+
 
 
 
