@@ -33,7 +33,7 @@ st.image(df2[0],width = 400,caption = caption)
 
 #display writing
 
-st.write('Price: ' + df[1])
+st.write('Price: ' + df2[1])
 
 
 
