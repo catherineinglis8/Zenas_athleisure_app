@@ -6,6 +6,7 @@ user = "catherineinglis",
 password = "CiGdr1*6",
 account = "QS89075.ca-central.aws",
 warehouse = "compute_wh",
+useraccount = "ACCOUNTADMIN",
 database = "ZENAS_ATHLEISURE_DB",
 schema = "PRODUCTS")
 my_cur = my_cnx.cursor()
