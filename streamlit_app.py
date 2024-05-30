@@ -5,7 +5,7 @@ import pandas as pd
 st.title("Zena\'s Amazing Athleisure Catalog")
 
 #Connect to snowflake
-my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
+my_cnx = snowflake.connector.connect(**st.secrets["snowflake"])
 my_cur = my_cnx.cursor()
 
 #run a snowflake quert to put it all in a var called my_catalog
