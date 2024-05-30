@@ -32,7 +32,7 @@ df2 = my_cur.fetchone()
 st.image(df2[0],width = 400,caption = caption)
 
 #display writing
-price = df2[1].values
+price = df2[1].values.tolist()
 
 st.write('Price: ' + price)
 
