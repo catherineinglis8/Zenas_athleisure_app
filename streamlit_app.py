@@ -29,7 +29,7 @@ my_cur.execute("SELECT direct_url, price, size_list, upsell_product_desc FROM ca
 df2 = my_cur.fetchone()
 
 #display photo with caption
-st.image(df[0],widght = 400,caption = product_caption)
+st.image(df2[0],width = 400,caption = caption)
 
 #display writing
 
