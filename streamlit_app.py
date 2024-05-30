@@ -32,9 +32,8 @@ df2 = my_cur.fetchone()
 st.image(df2[0],width = 400,caption = caption)
 
 #display writing
-price = df2.loc[1]
 
-st.write('Price: ' + price)
+st.write('Price: ',df2[1])
 
 
 
